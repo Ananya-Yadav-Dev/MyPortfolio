@@ -1,0 +1,18 @@
+[
+  {
+    "title": "WanderLust",
+    "imageSrc": "projects/WanderLust.png",
+    "description": "Discover and share stays worth remembering. Wanderlust lets users explore curated property listings and leave reviews to help fellow travelers. Built with a focus on simplicity, usability, and experience-driven content.",
+    "skills": ["EJS", "Express", "Node","MondoDb"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/Ananya-Yadav-Dev//WandarLust.git"
+  },
+  {
+    "title": "TradeX",
+    "imageSrc": "projects/Zerodha.png",
+    "description": "A sleek and intuitive stock trading platform simulation that mirrors real-world trading dashboards. It features live-style charts, portfolio insights, and a clean UI that offers a seamless experience for market enthusiasts.",
+    "skills": ["React", "Express", "Node","MongoDb"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/Ananya-Yadav-Dev/Zerodha-Clone.git"
+  }
+]

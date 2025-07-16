@@ -1,0 +1,115 @@
+@import '../../vars.css';
+
+
+.container {
+    width: 410px;
+    min-height: 450px;
+    color: white;
+    border-radius: 10px;
+    background: #1d293e;
+    box-shadow: 0 16px 14px 0 #355a8e;
+    padding: 14px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin: 0 24px;
+  }
+  
+  .container:hover {
+    transform: scale(1.03);
+  }
+  
+  .imageContainer {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .content {
+    margin-top: 12px;
+    margin-left: 4px;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .description {
+    font-size: 0.85rem;
+    color: #c5c6c7;
+    margin-top: 5px;
+    line-height: 1.4;
+  }
+  
+  .skills {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin: 8px 0px;
+    list-style: none;
+
+  }
+  
+  .skill {
+    background-color: rgba(59, 62, 72, 0.5);
+    font-weight: 300;
+    padding: 4px 10px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    border-radius: 100px;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+  .viewProject {
+    background-color: #007bff;
+    text-decoration: none;
+    color: white;
+    border: none;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .viewProject:hover {
+    background-color: white;
+    color: #007bff;
+  }
+  
+  .github {
+    background: black;
+    text-decoration: none;
+    border: 1px solid #555;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    transition: background 0.3s;
+  }
+  
+  .github:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .container{
+        min-width: 282px;
+    }
+  }

@@ -1,0 +1,188 @@
+@import "../../vars.css";
+
+.container {
+  scroll-margin-top: 160px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:30px;
+  margin-top: 160px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-text);
+  z-index: 1;
+}
+
+.title {
+  font-size: 56px;
+  font-weight: 700;
+  font-family: var(--font-roboto);
+  white-space: nowrap;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(255, 255, 255, 0) 120%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.profession{
+  font-size: 40px;
+  font-weight: 700;
+  color: #00abf0;
+  margin-bottom: 8px;
+}
+
+.description {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: var(--font-roboto);
+  margin-bottom: 12px;
+  color: rgb(197, 210, 223);
+}
+
+/* From Uiverse.io by gharsh11032000 */ 
+.contactBtn {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 18px;
+  font-size: 18px;
+  color: rgb(84, 145, 220);
+  border: 2px solid rgb(84, 145, 220);
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.contactBtn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: rgb(84, 145, 220);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.contactBtn:hover::before {
+  scale: 3;
+}
+
+.contactBtn:hover {
+  color: #212121;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(113, 179, 226, 0.4);
+}
+
+.contactBtn:active {
+  scale: 1;
+}
+
+.contactBtn a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+
+
+
+.heroImg {
+  width: 60%;
+  z-index: 1;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 12px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.topBlur {
+  position: absolute;
+  width: 50vw;
+  height: 50vh;
+  min-width: 350px;
+  top: -128px;
+  left: -10vw;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.bottomBlur {
+  position: absolute;
+  width: 70vw;
+  height: 50vw;
+  min-width: 250px;
+  top: 246px;
+  right: -25vw;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.socials {
+  padding: 16px 0;
+}
+
+.socials a{
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  border: .2rem solid hsl(195, 100%, 82%);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: white;
+  margin-right: 0.5rem;
+  transition: .5s ease;
+  box-shadow: 2px 2px 2px white;
+  margin-right: 15px;
+}
+
+.socials a:hover{
+  background: hsl(186 100% 69%);
+  color: black;
+  box-shadow: 0 0 1rem hsl(189, 16%, 92%);
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .content {
+        align-items: center;
+    }
+}

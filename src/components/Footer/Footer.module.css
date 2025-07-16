@@ -1,0 +1,45 @@
+@import "../../vars.css";
+
+.footer{
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-top: 1px solid rgb(247, 249, 251);
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.title{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.socials {
+  margin-top: 16px;
+  padding: 6px 0;
+}
+
+.socials a{
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color:black;
+  margin-right: 0.5rem;
+  transition: .5s ease;
+  margin-right: 8px;
+}
+
+.socials a:hover{
+  box-shadow: 0 0 1rem hsl(195, 3%, 23%);
+}
+
+.text{
+  font-weight: 600;
+}

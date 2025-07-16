@@ -1,0 +1,154 @@
+@import "../../vars.css";
+
+.container {
+    position: relative;
+    background: linear-gradient(#d4f7fd,#fdfdfd,#97f3fe);    
+    /* background: linear-gradient(#fdfdfd,#97f3fe,#97f3fe);   */
+    border-radius: 15px;
+    padding: 48px;
+    scroll-margin-top: 80px; /* Adjust to your fixed navbar height */
+    margin-top: 129px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Outfit';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+  }
+
+  .contactLeft {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contactLeft img{
+    width: 100%;
+  }
+
+.contactRight{
+  background-color: #00abf0;
+  overflow: visible;
+  width: 50%;
+  padding: 4% 4%;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.title h2{
+  font-weight: 600;
+  color:white;
+  /* color: #2e6e82; */
+  font-size: 40px;
+}
+
+.title hr{
+  border: none;
+  width: 120px;
+  height: 5px;
+  /* background-color: #2e6e82; */
+  background-color:rgb(251, 251, 251);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contactDetails{
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+}
+
+.contactRight textarea{
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+/* placeholder text */
+.contactDetails:focus{
+  border: 4px solid rgb(167, 224, 244);
+}
+
+.contactDetails::placeholder{
+  color: black;
+}
+
+.button {
+  background-color:#0078d0;
+  width: 120px;
+  border: 0;
+  border-radius: 56px;
+  /* color: var(--color-bg); */
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  outline: 0;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+.button:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.button:hover {
+  box-shadow: rgba(168, 192, 206, 0.2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (max-width:800px){
+
+  .container{
+    padding: 0%;
+    background: none;
+  }
+
+  .contactRight {
+    width: 100%;
+    border-radius: 5%;
+  }
+  .contactDetails{
+    width: 100%;
+  }
+
+  .contactLeft{
+    display: none;
+  }
+
+}
+
+@media (max-width:426px){
+  .button {
+    width: 100%;
+  }
+}

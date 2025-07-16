@@ -1,0 +1,29 @@
+@import '../../vars.css';
+
+.container {
+    width: 100%;
+    max-width: 170px;
+    min-height: 145px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 0px;
+    border-radius: 25px;
+    background-color: rgb(251, 254, 255);
+}
+
+
+.skill-image{
+    width: 40%;
+}
+
+.skill-name{
+    letter-spacing: 1.6px;
+    font-weight: 500;
+    color: black;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
