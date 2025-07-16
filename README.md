@@ -31,7 +31,7 @@ npm install
 **Start development server:**
 
 ```bash
-npm start
+npm run dev
 ```
 
 Visit `http://localhost:5173` to preview the site in your browser.
